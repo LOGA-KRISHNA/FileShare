@@ -525,4 +525,4 @@ if __name__ == "__main__":
     print("  Open → http://localhost:5000")
     print("  Files expire after 8 hours or on restart")
     print("─"*52 + "\n")
-    app.run(host="dainty-crisp-410bd5.netlify.app/", port=5000, debug=False)
+    app.run(host="0.0.0.0", port=5000, debug=False)
