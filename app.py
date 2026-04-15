@@ -520,9 +520,5 @@ def too_large(_):
 # Entry point
 # ──────────────────────────────────────────────
 if __name__ == "__main__":
-    print("\n" + "─"*52)
-    print("  SessionShare  –  up to 1 GB per file")
-    print("  Open → http://localhost:5000")
-    print("  Files expire after 8 hours or on restart")
-    print("─"*52 + "\n")
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
